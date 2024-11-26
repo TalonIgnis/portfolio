@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Website style.css">
+    <title>ContactInfo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <div class="Logo"><a href="Homepage.html"><img src="Media/not_for_talon.png" 
+        alt="Logo"> </a> </div>
+        <a href="DnD_Tools.html"><button class="button">DnD API</button></a>
+        <a href="Gallery.html"><button class="button">DND Gallery</button></a>
+        <a href="Homepage.html"><button class="button">Home</button></a>
+        <a href="Author.html"><button class="button">About the Author</button></a></div>
+        </ul>
+
+<reference path="Submitform.js"></reference>
+
+<img src="Media/Spell_trap.png" onclick="myFunction()">
+<script>
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+</script>
+
+
+<h1>Contact Me</h1>
+
+<div>If you have any suggestions leave your contact info and I will get back to you.</div>
+<div>
+<form id="form">
+        <label>Name: <input type="text" id="fname" name="fname" value="John Doe" ></label>
+
+        <label>Email: <input type="text" id="lname" name="lname" value="Exampleemail@hotmail.co.uk" ></label>
+        <br /><br />
+        <label>Phone number: <input type="text" id="lname" name="lname" value="092834964"></label>
+        <br /><br />
+
+
+        <button type="submit">Submit form</button>
+    </form>
+    <p id="log"></p>
+</div>
+</head>
+<body>
+    
+</body>
+</html>

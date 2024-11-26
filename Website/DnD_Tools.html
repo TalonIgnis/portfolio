@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script src="DND_API.js"></script>
+<head>
+    <link rel="stylesheet" href="Website style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DND API</title>
+    
+<div>
+    <ul class="Navbar"></ul>
+    <div class="Logo"><a href="Homepage.html"><img src="Media/not_for_talon.png" 
+        alt="Logo"> </a> </div>
+        <a href="Homepage.html"><button class="button">Home</button></a>
+        <a href="Gallery.html"><button class="button">DND Gallery</button></a>
+        <a href="Author.html"><button class="button">About the Author</button></a>
+        <a href="ContactInfo.html"><button class="button">Contact Info</button></a></div>
+        </ul>
+<div>
+    <img src="Media/Spell_trap.png" onclick="myFunction()">
+    
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
+</script>
+</div>
+    <reference path="DnD_API.js"></reference>
+<h1>Search D&D 5e API</h1>
+<!-- Buttons to fetch different categories from the API -->
+
+<button id="fetchClasses" onclick="Fclasses()">Get Classes</button>
+<button id="fetchSpells"onclick="Fspells()">Get Spells</button>
+<button id="fetchRaces"onclick="Fraces()">Get Races</button>
+<button id="fetchMonsters"onclick="FMonsters()">Get Monsters</button>
+
+<!-- Display the results here -->
+<div class="result-list" id="resultList"></div>
+</script>
+
+</head>
+</body>
+</html>
